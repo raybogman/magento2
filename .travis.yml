@@ -2,6 +2,9 @@ sudo: required
 dist: trusty
 group: edge
 addons:
+  sauce_connect:
+  username: "raybogman"
+  access_key: "86edf751-db34-487c-ab4c-2156c000e4ae"
   apt:
     packages:
     - mysql-server-5.6
