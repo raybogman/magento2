@@ -3,8 +3,8 @@ dist: trusty
 group: edge
 addons:
   sauce_connect:
-  username: "raybogman"
-  access_key: "86edf751-db34-487c-ab4c-2156c000e4ae"
+    username: "raybogman"
+    access_key: "Bk4cuLQMHfxYe/WaBv2G6HLLT3FLrElr4d32Lq+4OdYwyKx7qulCHLerN9V9NkE962QiIT45boJwYBD6qGdKSpid4kSS6cjvpBeVTWw0hKm3XNRpDeuBc3i301DPh8lb/3H6qPQ7r5ynswWtYOnAZ3SrucZUhQ7MLr6Ypx1eYW4EKmU35Vz+DUSK+Rftymy6SI/aGtMMJNc81LTovrwzY8zRptkNiC9at32XS38+ZtMsBoHuhWP0W3M4wTfehflF9P/N6CrL7Z+xUMNY8+1CvD13VoWcItjdSWggaQg8Jsj8Lsob3oFMWh1lbjrXIppQoTHXRdANbcCt12ruZHBFBCfx0efCKdsvghaHgFQc8jZaSO0xlcjC5c26YrUEDajveAfjJlKeJiHZC6PpBvZNxreeIYcadcgxEDI+UlKeljQRQ5+doPFrbYqkJpmM9dtb3wQarMd/ieq8FUjE/1ZxwA5ni70fa4EkbpnZjJoFP2/jClI+dkU2am3mYAFNMuDMPHDiJJMPkUg2mSvamD8YG3p1WUzI3pNqWtgBqZdls7skUkR+UxYfz4PGQb5O2MNgEzt+63uzosE+bLDCeyqGxXL1B4y1oRD+eN6qJZ0fREHtS+7stOkDGg0XhhLljPShXlMmI3I9sHw2W1YL6S2j1AfMRbhRvd0/DJvpVN/wkdM="
   apt:
     packages:
     - mysql-server-5.6
