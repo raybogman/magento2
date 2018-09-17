@@ -24,7 +24,10 @@ rm $CONNECT_DOWNLOAD
 cd bin
 ./sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --pidfile pid --tunnel-identifier $TRAVIS_JOB_NUMBER &
 
-# Wait for Connect to be ready before exiting
-while [ ! -f $READY_FILE ]; do
-  sleep .5
+  sleep 1
+while [ ! -f grep -m1 'Sauce Connect is up, you may start your tests.' < /tmp/sauce-connect-log.txt ]; do
+  sleep 1
 done
+
+echo Sauce-Connect is up and running
+kill $(cat pid)
