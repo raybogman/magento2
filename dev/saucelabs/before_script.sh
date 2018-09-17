@@ -8,7 +8,6 @@
 #
 # Curl and run this script as part of your .travis.yml before_script section:
 # before_script:
-#   - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
 
 VERSION="4.5.1"
 CONNECT_URL="https://saucelabs.com/downloads/sc-$VERSION-osx.zip"
