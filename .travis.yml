@@ -41,6 +41,6 @@ install:
     - composer require sauce/sausage
 before_script:
     - ./dev/travis/before_script.sh
-    - php vendor/bin/sauce_config "SAUCE_USERNAME" "SAUCE_ACCESS_KEY"
 script:
+    - php vendor/bin/sauce_config $SAUCE_USERNAME $SAUCE_ACCESS_KEY
     - if [ $TEST_SUITE == "saucelabs" ]; then php dev/tests/bootstrap.php; fi
