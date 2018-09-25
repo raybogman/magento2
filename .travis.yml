@@ -39,7 +39,7 @@ install:
     - composer install --no-interaction --prefer-dist
     - composer require facebook/webdriver
     - composer require sauce/sausage
-    - php vendor/bin/sauce_config "$SAUCE_USERNAME" "$SAUCE_ACCESS_KEY"  
+    - php vendor/bin/sauce_config  
 before_script:
     - ./dev/travis/before_script.sh
 script:
