@@ -22,8 +22,6 @@ env:
     - INTEGRATION_SETS=3
     - NODE_JS_VERSION=8
     - MAGENTO_HOST_NAME="magento2.travis"
-    - SAUCE_USERNAME=raybogman
-    - SAUCE_ACCESS_KEY=86edf751-db34-487c-ab4c-2156c000e4ae
   matrix:
     - TEST_SUITE=static
     - TEST_SUITE=saucelabs
@@ -41,7 +39,7 @@ install:
     - composer install --no-interaction --prefer-dist
     - composer require facebook/webdriver
     - composer require sauce/sausage
-    - php vendor/bin/sauce_config "$SAUCE_USERNAME" "$SAUCE_ACCESS_KEY"
+    - php vendor/bin/sauce_config raybogman 86edf751-db34-487c-ab4c-2156c000e4ae
 before_script:
     - ./dev/travis/before_script.sh
 script:
