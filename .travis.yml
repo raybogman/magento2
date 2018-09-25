@@ -39,7 +39,6 @@ install:
     - composer install --no-interaction --prefer-dist
     - composer require facebook/webdriver
     - composer require sauce/sausage
-    - vendor/bin/sauce_config $SAUCE_USERNAME $SAUCE_ACCESS_KEY
 before_script:
     - ./dev/travis/before_script.sh
     - ./dev/saucelabs/before_script.sh
