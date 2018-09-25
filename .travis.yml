@@ -13,7 +13,6 @@ addons:
       - magento2.travis
 language: php
 php:
-  - 7.0
   - 7.1
 git:
   depth: 5
@@ -24,25 +23,10 @@ env:
     - NODE_JS_VERSION=8
     - MAGENTO_HOST_NAME="magento2.travis"
   matrix:
-    - TEST_SUITE=unit
     - TEST_SUITE=static
-    - TEST_SUITE=js GRUNT_COMMAND=spec
-    - TEST_SUITE=js GRUNT_COMMAND=static
-    - TEST_SUITE=integration INTEGRATION_INDEX=1
-    - TEST_SUITE=integration INTEGRATION_INDEX=2
-    - TEST_SUITE=integration INTEGRATION_INDEX=3
-    - TEST_SUITE=functional
     - TEST_SUITE=saucelabs
 matrix:
   exclude:
-    - php: 7.0
-      env: TEST_SUITE=static
-    - php: 7.0
-      env: TEST_SUITE=js GRUNT_COMMAND=spec
-    - php: 7.0
-      env: TEST_SUITE=js GRUNT_COMMAND=static
-    - php: 7.0
-      env: TEST_SUITE=functional
 cache:
   apt: true
   directories:

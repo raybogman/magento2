@@ -20,4 +20,3 @@
   */
 
   $web_driver->quit();
-?>
