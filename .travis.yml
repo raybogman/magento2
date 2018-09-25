@@ -50,7 +50,9 @@ cache:
     - $HOME/node_modules
     - $HOME/yarn.lock
 before_install: ./dev/travis/before_install.sh
-install: composer install --no-interaction --prefer-dist
+install:
+    - composer install --no-interaction --prefer-dist
+    - composer require facebook/webdriver
 before_script: ./dev/travis/before_script.sh
 script:
   # Set arguments for variants of phpunit based tests; '|| true' prevents failing script when leading test fails
