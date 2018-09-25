@@ -16,7 +16,7 @@
   $web_driver->get("$MAGENTO_HOST_NAME");
 
   /*
-    Test actions here...
+    Test actions here.........
   */
 
   $web_driver->quit();
