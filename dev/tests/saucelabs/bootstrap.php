@@ -11,7 +11,7 @@
 
   $web_driver = RemoteWebDriver::create(
     "https://$SAUCE_USERNAME:$SAUCE_ACCESS_KEY@ondemand.saucelabs.com:443/wd/hub",
-    array("platform"=>"Windows 7", "browserName"=>"chrome", "version"=>"42")
+    array("platform"=>"Windows 10", "browserName"=>"chrome", "version"=>"69")
   );
   $web_driver->get("$MAGENTO_HOST_NAME");
 

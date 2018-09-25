@@ -38,6 +38,9 @@ before_install: ./dev/travis/before_install.sh
 install:
     - composer install --no-interaction --prefer-dist
     - composer require facebook/webdriver
-before_script: ./dev/travis/before_script.sh
+    - composer require sauce/sausage
+before_script:
+    - ./dev/travis/before_script.sh
+    - ./dev/saucelabs/before_script.sh
 script:
-  - if [ $TEST_SUITE == "saucelabs" ]; then dev/tests/bootstrap.php; fi
+    - if [ $TEST_SUITE == "saucelabs" ]; then php dev/tests/bootstrap.php; fi
